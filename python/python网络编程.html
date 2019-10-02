@@ -218,7 +218,1016 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="python&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;">python&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;</h1>
+                                <h3 id="&#x4E00;-&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x67B6;&#x6784;">&#x4E00; &#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x67B6;&#x6784;</h3>
+<h4 id="1-cs-&#x67B6;&#x6784;">1 C/S &#x67B6;&#x6784;</h4>
+<p>C/S&#x5373;&#xFF1A;Client&#x4E0E;Server &#xFF0C;&#x4E2D;&#x6587;&#x610F;&#x601D;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x67B6;&#x6784;&#xFF0C;&#x8FD9;&#x79CD;&#x67B6;&#x6784;&#x4E5F;&#x662F;&#x4ECE;&#x7528;&#x6237;&#x5C42;&#x9762;&#xFF08;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x7269;&#x7406;&#x5C42;&#x9762;&#xFF09;&#x6765;&#x5212;&#x5206;&#x7684;&#x3002;</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1567061652464.png" alt="1567061652464"></p>
+<h4 id="2--bs&#x67B6;&#x6784;">2  B/S&#x67B6;&#x6784;</h4>
+<p>B/S&#x5373;&#xFF1A;Browser&#x4E0E;Server,&#x4E2D;&#x6587;&#x610F;&#x601D;&#xFF1A;&#x6D4F;&#x89C8;&#x5668;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x67B6;&#x6784;&#xFF0C;&#x8FD9;&#x79CD;&#x67B6;&#x6784;&#x662F;&#x4ECE;&#x7528;&#x6237;&#x5C42;&#x9762;&#x6765;&#x5212;&#x5206;&#x7684;&#x3002;</p>
+<p>Browser&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x662F;&#x4E00;&#x79CD;Client&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x53EA;&#x662F;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x4E0D;&#x9700;&#x8981;&#x5927;&#x5BB6;&#x53BB;&#x5B89;&#x88C5;&#x4EC0;&#x4E48;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E0A;&#x901A;&#x8FC7;HTTP&#x8BF7;&#x6C42;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x76F8;&#x5173;&#x7684;&#x8D44;&#x6E90;&#xFF08;&#x7F51;&#x9875;&#x8D44;&#x6E90;&#xFF09;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;Browser&#x6D4F;&#x89C8;&#x5668;&#x5C31;&#x80FD;&#x8FDB;&#x884C;&#x589E;&#x5220;&#x6539;&#x67E5;</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1567061671614.png" alt="1567061671614"></p>
+<h3 id="&#x4E8C;-&#x7F51;&#x7EDC;&#x57FA;&#x7840;">&#x4E8C; &#x7F51;&#x7EDC;&#x57FA;&#x7840;</h3>
+<h4 id="1-osi&#x4E03;&#x5C42;&#x6A21;&#x578B;">1 <code>osi</code>&#x4E03;&#x5C42;&#x6A21;&#x578B;</h4>
+<p>&#x5E94;&#x7528;&#x5C42;   HTTP&#xFF0C;FTP&#xFF0C;NFS</p>
+<p>&#x8868;&#x793A;&#x5C42; Telnet&#xFF0C;SNMP</p>
+<p>&#x4F1A;&#x5316;&#x5C42; SMTP&#xFF0C;DNS</p>
+<p>&#x4F20;&#x8F93;&#x5C42;  TCP&#xFF0C;UDP </p>
+<p>&#x7F51;&#x7EDC;&#x5C42; IP&#xFF0C;ICMP&#xFF0C;ARP&#xFF0C;</p>
+<p>&#x6570;&#x636E;&#x94FE;&#x8DEF;&#x5C42; Ethernet&#xFF0C;PPP&#xFF0C;PDN&#xFF0C;SLIP&#xFF0C;FDDI</p>
+<p>&#x7269;&#x7406;&#x5C42;</p>
+<h4 id="2-socket-&#x7684;&#x6982;&#x5FF5;">2 socket &#x7684;&#x6982;&#x5FF5;</h4>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1567061919861.png" alt="1567061919861"></p>
+<p>socket&#x7684;&#x6982;&#x5FF5;&#xFF1A;</p>
+<p>&#x200B;    Socket&#x662F;&#x5E94;&#x7528;&#x5C42;&#x4E0E;TCP/IP&#x534F;&#x8BAE;&#x65CF;&#x901A;&#x4FE1;&#x7684;&#x4E2D;&#x95F4;&#x8F6F;&#x4EF6;&#x62BD;&#x8C61;&#x5C42;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x7EC4;&#x63A5;&#x53E3;&#x3002;&#x5728;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;Socket&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x95E8;&#x9762;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x628A;&#x590D;&#x6742;&#x7684;TCP/IP&#x534F;&#x8BAE;&#x65CF;&#x9690;&#x85CF;&#x5728;Socket&#x63A5;&#x53E3;&#x540E;&#x9762;&#xFF0C;&#x5BF9;&#x7528;&#x6237;&#x6765;&#x8BF4;&#xFF0C;&#x4E00;&#x7EC4;&#x7B80;&#x5355;&#x7684;&#x63A5;&#x53E3;&#x5C31;&#x662F;&#x5168;&#x90E8;&#xFF0C;&#x8BA9;Socket&#x53BB;&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x7B26;&#x5408;&#x6307;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
+<h3 id="&#x4E09;-tcp&#x534F;&#x8BAE;&#x548C;udp&#x534F;&#x8BAE;">&#x4E09; <code>tcp</code>&#x534F;&#x8BAE;&#x548C;<code>udp</code>&#x534F;&#x8BAE;</h3>
+<h4 id="1-tcp">1 <code>tcp</code></h4>
+<p><strong>TCP</strong>&#xFF08;Transmission Control Protocol&#xFF09;&#x53EF;&#x9760;&#x7684;&#x3001;&#x9762;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#x534F;&#x8BAE;&#xFF08;eg:&#x6253;&#x7535;&#x8BDD;&#xFF09;&#x3001;&#x4F20;&#x8F93;&#x6548;&#x7387;&#x4F4E;&#x5168;&#x53CC;&#x5DE5;&#x901A;&#x4FE1;&#xFF08;&#x53D1;&#x9001;&#x7F13;&#x5B58;&amp;&#x63A5;&#x6536;&#x7F13;&#x5B58;&#xFF09;&#x3001;&#x9762;&#x5411;&#x5B57;&#x8282;&#x6D41;&#x3002;&#x4F7F;&#x7528;TCP&#x7684;&#x5E94;&#x7528;&#xFF1A;Web&#x6D4F;&#x89C8;&#x5668;&#xFF1B;&#x7535;&#x5B50;&#x90AE;&#x4EF6;&#x3001;&#x6587;&#x4EF6;&#x4F20;&#x8F93;&#x7A0B;&#x5E8F;&#x3002;</p>
+<h4 id="2-udp">2 <code>udp</code></h4>
+<p>&#xFF08;User Datagram Protocol&#xFF09;&#x4E0D;&#x53EF;&#x9760;&#x7684;&#x3001;&#x65E0;&#x8FDE;&#x63A5;&#x7684;&#x670D;&#x52A1;&#xFF0C;&#x4F20;&#x8F93;&#x6548;&#x7387;&#x9AD8;&#xFF08;&#x53D1;&#x9001;&#x524D;&#x65F6;&#x5EF6;&#x5C0F;&#xFF09;&#xFF0C;&#x4E00;&#x5BF9;&#x4E00;&#x3001;&#x4E00;&#x5BF9;&#x591A;&#x3001;&#x591A;&#x5BF9;&#x4E00;&#x3001;&#x591A;&#x5BF9;&#x591A;&#x3001;&#x9762;&#x5411;&#x62A5;&#x6587;&#xFF0C;&#x5C3D;&#x6700;&#x5927;&#x52AA;&#x529B;&#x670D;&#x52A1;&#xFF0C;&#x65E0;&#x62E5;&#x585E;&#x63A7;&#x5236;&#x3002;&#x4F7F;&#x7528;UDP&#x7684;&#x5E94;&#x7528;&#xFF1A;&#x57DF;&#x540D;&#x7CFB;&#x7EDF; (DNS)&#xFF1B;&#x89C6;&#x9891;&#x6D41;&#xFF1B;IP&#x8BED;&#x97F3;(VoIP)&#x3002;</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1567062289662.png" alt="1567062289662"></p>
+<h3 id="&#x56DB;-&#x5957;&#x63A5;&#x5B57;&#x7684;&#x7B80;&#x5355;&#x5B9E;&#x7528;">&#x56DB; &#x5957;&#x63A5;&#x5B57;&#x7684;&#x7B80;&#x5355;&#x5B9E;&#x7528;</h3>
+<h4 id="1-&#x57FA;&#x4E8E;tcp&#x7684;&#x7B80;&#x5355;&#x7684;socket">1 &#x57FA;&#x4E8E;tcp&#x7684;&#x7B80;&#x5355;&#x7684;socket</h4>
+<p>server&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket
+sk = socket.socket()
+sk.bind((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8898</span>))  <span class="hljs-comment">#&#x628A;&#x5730;&#x5740;&#x7ED1;&#x5B9A;&#x5230;&#x5957;&#x63A5;&#x5B57;</span>
+sk.listen()          <span class="hljs-comment">#&#x76D1;&#x542C;&#x94FE;&#x63A5;</span>
+conn,addr = sk.accept() <span class="hljs-comment">#&#x63A5;&#x53D7;&#x5BA2;&#x6237;&#x7AEF;&#x94FE;&#x63A5;</span>
+ret = conn.recv(<span class="hljs-number">1024</span>)  <span class="hljs-comment">#&#x63A5;&#x6536;&#x5BA2;&#x6237;&#x7AEF;&#x4FE1;&#x606F;</span>
+print(ret)       <span class="hljs-comment">#&#x6253;&#x5370;&#x5BA2;&#x6237;&#x7AEF;&#x4FE1;&#x606F;</span>
+conn.send(<span class="hljs-string">b&apos;hi&apos;</span>)        <span class="hljs-comment">#&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4FE1;&#x606F;</span>
+conn.close()       <span class="hljs-comment">#&#x5173;&#x95ED;&#x5BA2;&#x6237;&#x7AEF;&#x5957;&#x63A5;&#x5B57;</span>
+sk.close()        <span class="hljs-comment">#&#x5173;&#x95ED;&#x670D;&#x52A1;&#x5668;&#x5957;&#x63A5;&#x5B57;(&#x53EF;&#x9009;)</span>
+</code></pre>
+<p>client&#x7AEF;</p>
+<pre><code>import socket
+sk = socket.socket()           # &#x521B;&#x5EFA;&#x5BA2;&#x6237;&#x5957;&#x63A5;&#x5B57;
+sk.connect((&apos;127.0.0.1&apos;,8898))    # &#x5C1D;&#x8BD5;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;
+sk.send(b&apos;hello!&apos;)
+ret = sk.recv(1024)         # &#x5BF9;&#x8BDD;(&#x53D1;&#x9001;/&#x63A5;&#x6536;)
+print(ret)
+sk.close()            # &#x5173;&#x95ED;&#x5BA2;&#x6237;&#x5957;&#x63A5;&#x5B57;
+</code></pre><h4 id="2-&#x57FA;&#x4E8E;udp&#x7684;&#x7B80;&#x5355;&#x7684;socket">2 &#x57FA;&#x4E8E;udp&#x7684;&#x7B80;&#x5355;&#x7684;socket</h4>
+<p>server&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket
+udp_sk = socket.socket(type=socket.SOCK_DGRAM)   <span class="hljs-comment">#&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5957;&#x63A5;&#x5B57;</span>
+udp_sk.bind((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">9000</span>))        <span class="hljs-comment">#&#x7ED1;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x5957;&#x63A5;&#x5B57;</span>
+msg,addr = udp_sk.recvfrom(<span class="hljs-number">1024</span>)
+print(msg)
+udp_sk.sendto(<span class="hljs-string">b&apos;hi&apos;</span>,addr)                 <span class="hljs-comment"># &#x5BF9;&#x8BDD;(&#x63A5;&#x6536;&#x4E0E;&#x53D1;&#x9001;)</span>
+udp_sk.close()                         <span class="hljs-comment"># &#x5173;&#x95ED;&#x670D;&#x52A1;&#x5668;&#x5957;&#x63A5;&#x5B57;</span>
+</code></pre>
+<p>client&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">9000</span>)
+udp_sk=socket.socket(type=socket.SOCK_DGRAM)
+udp_sk.sendto(<span class="hljs-string">b&apos;hello&apos;</span>,ip_port)
+back_msg,addr=udp_sk.recvfrom(<span class="hljs-number">1024</span>)
+print(back_msg.decode(<span class="hljs-string">&apos;utf-8&apos;</span>),addr)
+</code></pre>
+<h4 id="3-qq&#x804A;&#x5929;">3 qq&#x804A;&#x5929;</h4>
+<p>server&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8081</span>)
+udp_server_sock=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+udp_server_sock.bind(ip_port)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    qq_msg,addr=udp_server_sock.recvfrom(<span class="hljs-number">1024</span>)
+    print(<span class="hljs-string">&apos;&#x6765;&#x81EA;[%s:%s]&#x7684;&#x4E00;&#x6761;&#x6D88;&#x606F;:\033[1;44m%s\033[0m&apos;</span> %(addr[<span class="hljs-number">0</span>],addr[<span class="hljs-number">1</span>],qq_msg.decode(<span class="hljs-string">&apos;utf-8&apos;</span>)))
+    back_msg=input(<span class="hljs-string">&apos;&#x56DE;&#x590D;&#x6D88;&#x606F;: &apos;</span>).strip()
+
+    udp_server_sock.sendto(back_msg.encode(<span class="hljs-string">&apos;utf-8&apos;</span>),addr)
+</code></pre>
+<p>client&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket
+BUFSIZE=<span class="hljs-number">1024</span>
+udp_client_socket=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+
+qq_name_dic={
+    <span class="hljs-string">&apos;&#x563B;&#x563B;&apos;</span>:(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8081</span>),
+    <span class="hljs-string">&apos;&#x54C8;&#x54C8;&apos;</span>:(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8081</span>),
+    <span class="hljs-string">&apos;&#x5FAE;&#x5FAE;&apos;</span>:(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8081</span>),
+    <span class="hljs-string">&apos;&#x6B6A;&#x6B6A;&apos;</span>:(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8081</span>),
+}
+
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    qq_name=input(<span class="hljs-string">&apos;&#x8BF7;&#x9009;&#x62E9;&#x804A;&#x5929;&#x5BF9;&#x8C61;: &apos;</span>).strip()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        msg=input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x6D88;&#x606F;,&#x56DE;&#x8F66;&#x53D1;&#x9001;,&#x8F93;&#x5165;q&#x7ED3;&#x675F;&#x548C;&#x4ED6;&#x7684;&#x804A;&#x5929;: &apos;</span>).strip()
+        <span class="hljs-keyword">if</span> msg == <span class="hljs-string">&apos;q&apos;</span>:<span class="hljs-keyword">break</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> msg <span class="hljs-keyword">or</span> <span class="hljs-keyword">not</span> qq_name <span class="hljs-keyword">or</span> qq_name <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> qq_name_dic:<span class="hljs-keyword">continue</span>
+        udp_client_socket.sendto(msg.encode(<span class="hljs-string">&apos;utf-8&apos;</span>),qq_name_dic[qq_name])
+
+        back_msg,addr=udp_client_socket.recvfrom(BUFSIZE)
+        print(<span class="hljs-string">&apos;&#x6765;&#x81EA;[%s:%s]&#x7684;&#x4E00;&#x6761;&#x6D88;&#x606F;:\033[1;44m%s\033[0m&apos;</span> %(addr[<span class="hljs-number">0</span>],addr[<span class="hljs-number">1</span>],back_msg.decode(<span class="hljs-string">&apos;utf-8&apos;</span>)))
+
+udp_client_socket.close()
+</code></pre>
+<h4 id="4-&#x65F6;&#x95F4;&#x670D;&#x52A1;&#x5668;">4 &#x65F6;&#x95F4;&#x670D;&#x52A1;&#x5668;</h4>
+<p>server&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment"># _*_coding:utf-8_*_</span>
+<span class="hljs-keyword">from</span> socket <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">from</span> time <span class="hljs-keyword">import</span> strftime
+
+ip_port = (<span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-number">9000</span>)
+bufsize = <span class="hljs-number">1024</span>
+
+tcp_server = socket(AF_INET, SOCK_DGRAM)
+tcp_server.setsockopt(SOL_SOCKET,SO_REUSEADDR,<span class="hljs-number">1</span>)
+tcp_server.bind(ip_port)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    msg, addr = tcp_server.recvfrom(bufsize)
+    print(<span class="hljs-string">&apos;===&gt;&apos;</span>, msg)
+
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> msg:
+        time_fmt = <span class="hljs-string">&apos;%Y-%m-%d %X&apos;</span>
+    <span class="hljs-keyword">else</span>:
+        time_fmt = msg.decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+    back_msg = strftime(time_fmt)
+
+    tcp_server.sendto(back_msg.encode(<span class="hljs-string">&apos;utf-8&apos;</span>), addr)
+
+tcp_server.close()
+</code></pre>
+<p>client&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">from</span> socket <span class="hljs-keyword">import</span> *
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">9000</span>)
+bufsize=<span class="hljs-number">1024</span>
+
+tcp_client=socket(AF_INET,SOCK_DGRAM)
+
+
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    msg=input(<span class="hljs-string">&apos;&#x8BF7;&#x8F93;&#x5165;&#x65F6;&#x95F4;&#x683C;&#x5F0F;(&#x4F8B;%Y %m %d)&gt;&gt;: &apos;</span>).strip()
+    tcp_client.sendto(msg.encode(<span class="hljs-string">&apos;utf-8&apos;</span>),ip_port)
+
+    data=tcp_client.recv(bufsize)
+</code></pre>
+<h4 id="5-socket&#x53C2;&#x6570;&#x7684;&#x89E3;&#x91CA;">5 socket&#x53C2;&#x6570;&#x7684;&#x89E3;&#x91CA;</h4>
+<pre><code class="lang-python">socket.socket(family=AF_INET,type=SOCK_STREAM,proto=<span class="hljs-number">0</span>,fileno=<span class="hljs-keyword">None</span>)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th><strong>family</strong></th>
+<th>&#x5730;&#x5740;&#x7CFB;&#x5217;&#x5E94;&#x4E3A;AF_INET(&#x9ED8;&#x8BA4;&#x503C;),AF_INET6,AF_UNIX,AF_CAN&#x6216;AF_RDS&#x3002;&#xFF08;AF_UNIX &#x57DF;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4F7F;&#x7528;&#x672C;&#x5730; socket &#x6587;&#x4EF6;&#x6765;&#x901A;&#x4FE1;&#xFF09;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>type</strong></td>
+<td>&#x5957;&#x63A5;&#x5B57;&#x7C7B;&#x578B;&#x5E94;&#x4E3A;SOCK<em>STREAM(&#x9ED8;&#x8BA4;&#x503C;),SOCK_DGRAM,SOCK_RAW&#x6216;&#x5176;&#x4ED6;SOCK</em>&#x5E38;&#x91CF;&#x4E4B;&#x4E00;&#x3002;<br><strong>SOCK_STREAM</strong> &#x662F;&#x57FA;&#x4E8E;TCP&#x7684;&#xFF0C;&#x6709;&#x4FDD;&#x969C;&#x7684;&#xFF08;&#x5373;&#x80FD;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x6B63;&#x786E;&#x4F20;&#x9001;&#x5230;&#x5BF9;&#x65B9;&#xFF09;&#x9762;&#x5411;&#x8FDE;&#x63A5;&#x7684;SOCKET&#xFF0C;&#x591A;&#x7528;&#x4E8E;&#x8D44;&#x6599;&#x4F20;&#x9001;&#x3002; <br><strong>SOCK_DGRAM</strong> &#x662F;&#x57FA;&#x4E8E;UDP&#x7684;&#xFF0C;&#x65E0;&#x4FDD;&#x969C;&#x7684;&#x9762;&#x5411;&#x6D88;&#x606F;&#x7684;socket&#xFF0C;&#x591A;&#x7528;&#x4E8E;&#x5728;&#x7F51;&#x7EDC;&#x4E0A;&#x53D1;&#x5E7F;&#x64AD;&#x4FE1;&#x606F;&#x3002;</td>
+</tr>
+<tr>
+<td><strong>proto</strong></td>
+<td>&#x534F;&#x8BAE;&#x53F7;&#x901A;&#x5E38;&#x4E3A;&#x96F6;,&#x53EF;&#x4EE5;&#x7701;&#x7565;,&#x6216;&#x8005;&#x5728;&#x5730;&#x5740;&#x65CF;&#x4E3A;AF_CAN&#x7684;&#x60C5;&#x51B5;&#x4E0B;,&#x534F;&#x8BAE;&#x5E94;&#x4E3A;CAN_RAW&#x6216;CAN_BCM&#x4E4B;&#x4E00;&#x3002;</td>
+</tr>
+<tr>
+<td><strong>fileno</strong></td>
+<td>&#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;fileno,&#x5219;&#x5176;&#x4ED6;&#x53C2;&#x6570;&#x5C06;&#x88AB;&#x5FFD;&#x7565;,&#x5BFC;&#x81F4;&#x5E26;&#x6709;&#x6307;&#x5B9A;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x8FD4;&#x56DE;&#x3002;<br>&#x4E0E;socket.fromfd()&#x4E0D;&#x540C;,fileno&#x5C06;&#x8FD4;&#x56DE;&#x76F8;&#x540C;&#x7684;&#x5957;&#x63A5;&#x5B57;,&#x800C;&#x4E0D;&#x662F;&#x91CD;&#x590D;&#x7684;&#x3002;<br>&#x8FD9;&#x53EF;&#x80FD;&#x6709;&#x52A9;&#x4E8E;&#x4F7F;&#x7528;socket.close()&#x5173;&#x95ED;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x63D2;&#x5EA7;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="6-&#x7C98;&#x5305;">6 &#x7C98;&#x5305;</h4>
+<p>&#x7C98;&#x5305;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<p>&#x200B;            &#x540C;&#x65F6;&#x6267;&#x884C;&#x591A;&#x6761;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x5F88;&#x53EF;&#x80FD;&#x53EA;&#x6709;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5728;&#x6267;&#x884C;&#x5176;&#x4ED6;&#x547D;&#x4EE4;&#x7684;&#x65F6;&#x5019;&#x53C8;&#x63A5;&#x6536;&#x5230;&#x4E4B;&#x524D;&#x6267;&#x884C;&#x7684;&#x53E6;&#x5916;&#x4E00;&#x90E8;&#x5206;&#x7ED3;&#x679C;&#xFF0C;&#x8FD9;&#x79CD;&#x663E;&#x73B0;&#x5C31;&#x662F;&#x9ECF;&#x5305;&#x3002;</p>
+<h5 id="61&#x57FA;&#x4E8E;tcp&#x534F;&#x8BAE;&#x5B9E;&#x73B0;&#x7684;&#x7C98;&#x5305;">6.1&#x57FA;&#x4E8E;tcp&#x534F;&#x8BAE;&#x5B9E;&#x73B0;&#x7684;&#x7C98;&#x5305;</h5>
+<p>tcp server</p>
+<pre><code>#_*_coding:utf-8_*_
+from socket import *
+import subprocess
+
+ip_port=(&apos;127.0.0.1&apos;,8888)
+BUFSIZE=1024
+
+tcp_socket_server=socket(AF_INET,SOCK_STREAM)
+tcp_socket_server.setsockopt(SOL_SOCKET,SO_REUSEADDR,1)
+tcp_socket_server.bind(ip_port)
+tcp_socket_server.listen(5)
+
+while True:
+    conn,addr=tcp_socket_server.accept()
+    print(&apos;&#x5BA2;&#x6237;&#x7AEF;&apos;,addr)
+
+    while True:
+        cmd=conn.recv(BUFSIZE)
+        if len(cmd) == 0:break
+
+        res=subprocess.Popen(cmd.decode(&apos;utf-8&apos;),shell=True,
+                         stdout=subprocess.PIPE,
+                         stdin=subprocess.PIPE,
+                         stderr=subprocess.PIPE)
+
+        stderr=res.stderr.read()
+        stdout=res.stdout.read()
+        conn.send(stderr)
+        conn.send(stdout)
+</code></pre><p>tcp client</p>
+<pre><code>#_*_coding:utf-8_*_
+import socket
+BUFSIZE=1024
+ip_port=(&apos;127.0.0.1&apos;,8888)
+
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+res=s.connect_ex(ip_port)
+
+while True:
+    msg=input(&apos;&gt;&gt;: &apos;).strip()
+    if len(msg) == 0:continue
+    if msg == &apos;quit&apos;:break
+
+    s.send(msg.encode(&apos;utf-8&apos;))
+    act_res=s.recv(BUFSIZE)
+
+    print(act_res.decode(&apos;utf-8&apos;),end=&apos;&apos;)
+</code></pre><p><strong>&#x53EA;&#x6709;TCP&#x6709;&#x7C98;&#x5305;&#x73B0;&#x8C61;&#xFF0C;UDP&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x7C98;&#x5305;</strong></p>
+<h5 id="62-&#x7C98;&#x5305;&#x7684;&#x6210;&#x56E0;">6.2 &#x7C98;&#x5305;&#x7684;&#x6210;&#x56E0;</h5>
+<h6 id="621-tcp&#x534F;&#x8BAE;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4F20;&#x8F93;">6.2.1 tcp&#x534F;&#x8BAE;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4F20;&#x8F93;</h6>
+<p>tcp&#x534F;&#x8BAE;&#x7684;&#x62C6;&#x5305;&#x673A;&#x5236;</p>
+<pre><code>&#x5F53;&#x53D1;&#x9001;&#x7AEF;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x957F;&#x5EA6;&#x5927;&#x4E8E;&#x7F51;&#x5361;&#x7684;MTU&#x65F6;&#xFF0C;tcp&#x4F1A;&#x5C06;&#x8FD9;&#x6B21;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x62C6;&#x6210;&#x51E0;&#x4E2A;&#x6570;&#x636E;&#x5305;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x3002; 
+MTU&#x662F;Maximum Transmission Unit&#x7684;&#x7F29;&#x5199;&#x3002;&#x610F;&#x601D;&#x662F;&#x7F51;&#x7EDC;&#x4E0A;&#x4F20;&#x9001;&#x7684;&#x6700;&#x5927;&#x6570;&#x636E;&#x5305;&#x3002;MTU&#x7684;&#x5355;&#x4F4D;&#x662F;&#x5B57;&#x8282;&#x3002; &#x5927;&#x90E8;&#x5206;&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x7684;MTU&#x90FD;&#x662F;1500&#x3002;&#x5982;&#x679C;&#x672C;&#x673A;&#x7684;MTU&#x6BD4;&#x7F51;&#x5173;&#x7684;MTU&#x5927;&#xFF0C;&#x5927;&#x7684;&#x6570;&#x636E;&#x5305;&#x5C31;&#x4F1A;&#x88AB;&#x62C6;&#x5F00;&#x6765;&#x4F20;&#x9001;&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x4EA7;&#x751F;&#x5F88;&#x591A;&#x6570;&#x636E;&#x5305;&#x788E;&#x7247;&#xFF0C;&#x589E;&#x52A0;&#x4E22;&#x5305;&#x7387;&#xFF0C;&#x964D;&#x4F4E;&#x7F51;&#x7EDC;&#x901F;&#x5EA6;&#x3002;
+</code></pre><p>&#x9762;&#x5411;&#x6D41;&#x7684;&#x901A;&#x4FE1;&#x7279;&#x70B9;&#x548C;Nagle&#x7B97;&#x6CD5;</p>
+<pre><code>TCP&#xFF08;transport control protocol&#xFF0C;&#x4F20;&#x8F93;&#x63A7;&#x5236;&#x534F;&#x8BAE;&#xFF09;&#x662F;&#x9762;&#x5411;&#x8FDE;&#x63A5;&#x7684;&#xFF0C;&#x9762;&#x5411;&#x6D41;&#x7684;&#xFF0C;&#x63D0;&#x4F9B;&#x9AD8;&#x53EF;&#x9760;&#x6027;&#x670D;&#x52A1;&#x3002;
+&#x6536;&#x53D1;&#x4E24;&#x7AEF;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF09;&#x90FD;&#x8981;&#x6709;&#x4E00;&#x4E00;&#x6210;&#x5BF9;&#x7684;socket&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x53D1;&#x9001;&#x7AEF;&#x4E3A;&#x4E86;&#x5C06;&#x591A;&#x4E2A;&#x53D1;&#x5F80;&#x63A5;&#x6536;&#x7AEF;&#x7684;&#x5305;&#xFF0C;&#x66F4;&#x6709;&#x6548;&#x7684;&#x53D1;&#x5230;&#x5BF9;&#x65B9;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x4F18;&#x5316;&#x65B9;&#x6CD5;&#xFF08;Nagle&#x7B97;&#x6CD5;&#xFF09;&#xFF0C;&#x5C06;&#x591A;&#x6B21;&#x95F4;&#x9694;&#x8F83;&#x5C0F;&#x4E14;&#x6570;&#x636E;&#x91CF;&#x5C0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x7684;&#x6570;&#x636E;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x5C01;&#x5305;&#x3002;
+&#x8FD9;&#x6837;&#xFF0C;&#x63A5;&#x6536;&#x7AEF;&#xFF0C;&#x5C31;&#x96BE;&#x4E8E;&#x5206;&#x8FA8;&#x51FA;&#x6765;&#x4E86;&#xFF0C;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x79D1;&#x5B66;&#x7684;&#x62C6;&#x5305;&#x673A;&#x5236;&#x3002; &#x5373;&#x9762;&#x5411;&#x6D41;&#x7684;&#x901A;&#x4FE1;&#x662F;&#x65E0;&#x6D88;&#x606F;&#x4FDD;&#x62A4;&#x8FB9;&#x754C;&#x7684;&#x3002; 
+&#x5BF9;&#x4E8E;&#x7A7A;&#x6D88;&#x606F;&#xFF1A;tcp&#x662F;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x6D41;&#x7684;&#xFF0C;&#x4E8E;&#x662F;&#x6536;&#x53D1;&#x7684;&#x6D88;&#x606F;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x7AEF;&#x90FD;&#x6DFB;&#x52A0;&#x7A7A;&#x6D88;&#x606F;&#x7684;&#x5904;&#x7406;&#x673A;&#x5236;&#xFF0C;&#x9632;&#x6B62;&#x7A0B;&#x5E8F;&#x5361;&#x4F4F;&#xFF0C;&#x800C;udp&#x662F;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x62A5;&#x7684;&#xFF0C;&#x5373;&#x4FBF;&#x662F;&#x4F60;&#x8F93;&#x5165;&#x7684;&#x662F;&#x7A7A;&#x5185;&#x5BB9;&#xFF08;&#x76F4;&#x63A5;&#x56DE;&#x8F66;&#xFF09;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x88AB;&#x53D1;&#x9001;&#xFF0C;udp&#x534F;&#x8BAE;&#x4F1A;&#x5E2E;&#x4F60;&#x5C01;&#x88C5;&#x4E0A;&#x6D88;&#x606F;&#x5934;&#x53D1;&#x9001;&#x8FC7;&#x53BB;&#x3002; 
+&#x53EF;&#x9760;&#x9ECF;&#x5305;&#x7684;tcp&#x534F;&#x8BAE;&#xFF1A;tcp&#x7684;&#x534F;&#x8BAE;&#x6570;&#x636E;&#x4E0D;&#x4F1A;&#x4E22;&#xFF0C;&#x6CA1;&#x6709;&#x6536;&#x5B8C;&#x5305;&#xFF0C;&#x4E0B;&#x6B21;&#x63A5;&#x6536;&#xFF0C;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0A;&#x6B21;&#x7EE7;&#x7EED;&#x63A5;&#x6536;&#xFF0C;&#x5DF1;&#x7AEF;&#x603B;&#x662F;&#x5728;&#x6536;&#x5230;ack&#x65F6;&#x624D;&#x4F1A;&#x6E05;&#x9664;&#x7F13;&#x51B2;&#x533A;&#x5185;&#x5BB9;&#x3002;&#x6570;&#x636E;&#x662F;&#x53EF;&#x9760;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x7C98;&#x5305;&#x3002;
+</code></pre><h5 id="63-udp&#x548C;tcp&#x4E00;&#x6B21;&#x53D1;&#x9001;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x7684;&#x9650;&#x5236;">6.3 udp&#x548C;tcp&#x4E00;&#x6B21;&#x53D1;&#x9001;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x7684;&#x9650;&#x5236;</h5>
+<pre><code>&#x7528;UDP&#x534F;&#x8BAE;&#x53D1;&#x9001;&#x65F6;&#xFF0C;&#x7528;sendto&#x51FD;&#x6570;&#x6700;&#x5927;&#x80FD;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x957F;&#x5EA6;&#x4E3A;&#xFF1A;65535- IP&#x5934;(20) &#x2013; UDP&#x5934;(8)&#xFF1D;65507&#x5B57;&#x8282;&#x3002;&#x7528;sendto&#x51FD;&#x6570;&#x53D1;&#x9001;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x9001;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x5927;&#x4E8E;&#x8BE5;&#x503C;&#xFF0C;&#x5219;&#x51FD;&#x6570;&#x4F1A;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x3002;&#xFF08;&#x4E22;&#x5F03;&#x8FD9;&#x4E2A;&#x5305;&#xFF0C;&#x4E0D;&#x8FDB;&#x884C;&#x53D1;&#x9001;&#xFF09; 
+
+    &#x7528;TCP&#x534F;&#x8BAE;&#x53D1;&#x9001;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;TCP&#x662F;&#x6570;&#x636E;&#x6D41;&#x534F;&#x8BAE;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x5B58;&#x5728;&#x5305;&#x5927;&#x5C0F;&#x7684;&#x9650;&#x5236;&#xFF08;&#x6682;&#x4E0D;&#x8003;&#x8651;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5927;&#x5C0F;&#xFF09;&#xFF0C;&#x8FD9;&#x662F;&#x6307;&#x5728;&#x7528;send&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x53C2;&#x6570;&#x4E0D;&#x53D7;&#x9650;&#x5236;&#x3002;&#x800C;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x6240;&#x6307;&#x5B9A;&#x7684;&#x8FD9;&#x6BB5;&#x6570;&#x636E;&#x5E76;&#x4E0D;&#x4E00;&#x5B9A;&#x4F1A;&#x4E00;&#x6B21;&#x6027;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x6BB5;&#x6570;&#x636E;&#x6BD4;&#x8F83;&#x957F;&#xFF0C;&#x4F1A;&#x88AB;&#x5206;&#x6BB5;&#x53D1;&#x9001;&#xFF0C;&#x5982;&#x679C;&#x6BD4;&#x8F83;&#x77ED;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x7B49;&#x5F85;&#x548C;&#x4E0B;&#x4E00;&#x6B21;&#x6570;&#x636E;&#x4E00;&#x8D77;&#x53D1;&#x9001;&#x3002;
+</code></pre><h5 id="64-&#x4F1A;&#x53D1;&#x751F;&#x9ECF;&#x5305;&#x7684;&#x4E24;&#x79CD;&#x60C5;&#x51B5;">6.4 &#x4F1A;&#x53D1;&#x751F;&#x9ECF;&#x5305;&#x7684;&#x4E24;&#x79CD;&#x60C5;&#x51B5;</h5>
+<h6 id="641-&#x60C5;&#x51B5;&#x4E00;-&#x53D1;&#x9001;&#x65B9;&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;">6.4.1 &#x60C5;&#x51B5;&#x4E00; &#x53D1;&#x9001;&#x65B9;&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;</h6>
+<p>&#x53D1;&#x9001;&#x7AEF;&#x9700;&#x8981;&#x7B49;&#x7F13;&#x51B2;&#x533A;&#x6EE1;&#x624D;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#xFF0C;&#x9020;&#x6210;&#x7C98;&#x5305;&#xFF08;&#x53D1;&#x9001;&#x6570;&#x636E;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x5F88;&#x77ED;&#xFF0C;&#x6570;&#x636E;&#x4E86;&#x5F88;&#x5C0F;&#xFF0C;&#x4F1A;&#x5408;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x4EA7;&#x751F;&#x7C98;&#x5305;&#xFF09;</p>
+<p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">from</span> socket <span class="hljs-keyword">import</span> *
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>)
+tcp_socket_server=socket(AF_INET,SOCK_STREAM)
+tcp_socket_server.bind(ip_port)
+tcp_socket_server.listen(<span class="hljs-number">5</span>)
+conn,addr=tcp_socket_server.accept()
+data1=conn.recv(<span class="hljs-number">10</span>)
+data2=conn.recv(<span class="hljs-number">10</span>)
+
+print(<span class="hljs-string">&apos;-----&gt;&apos;</span>,data1.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+print(<span class="hljs-string">&apos;-----&gt;&apos;</span>,data2.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+
+conn.close()
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket
+BUFSIZE=<span class="hljs-number">1024</span>
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>)
+
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+res=s.connect_ex(ip_port)
+
+
+s.send(<span class="hljs-string">&apos;hello&apos;</span>.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+s.send(<span class="hljs-string">&apos;egg&apos;</span>.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+</code></pre>
+<h6 id="642-&#x60C5;&#x51B5;&#x4E8C;-&#x63A5;&#x6536;&#x65B9;&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;">6.4.2 &#x60C5;&#x51B5;&#x4E8C; &#x63A5;&#x6536;&#x65B9;&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;</h6>
+<p>&#x63A5;&#x6536;&#x65B9;&#x4E0D;&#x53CA;&#x65F6;&#x63A5;&#x6536;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5305;&#xFF0C;&#x9020;&#x6210;&#x591A;&#x4E2A;&#x5305;&#x63A5;&#x6536;&#xFF08;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x4E86;&#x4E00;&#x6BB5;&#x6570;&#x636E;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x53EA;&#x6536;&#x4E86;&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x4E0B;&#x6B21;&#x518D;&#x6536;&#x7684;&#x65F6;&#x5019;&#x8FD8;&#x662F;&#x4ECE;&#x7F13;&#x51B2;&#x533A;&#x62FF;&#x4E0A;&#x6B21;&#x9057;&#x7559;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4EA7;&#x751F;&#x7C98;&#x5305;&#xFF09;</p>
+<p> &#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">from</span> socket <span class="hljs-keyword">import</span> *
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>)
+
+tcp_socket_server=socket(AF_INET,SOCK_STREAM)
+tcp_socket_server.bind(ip_port)
+tcp_socket_server.listen(<span class="hljs-number">5</span>)
+
+
+conn,addr=tcp_socket_server.accept()
+
+
+data1=conn.recv(<span class="hljs-number">2</span>) <span class="hljs-comment">#&#x4E00;&#x6B21;&#x6CA1;&#x6709;&#x6536;&#x5B8C;&#x6574;</span>
+data2=conn.recv(<span class="hljs-number">10</span>)<span class="hljs-comment">#&#x4E0B;&#x6B21;&#x6536;&#x7684;&#x65F6;&#x5019;,&#x4F1A;&#x5148;&#x53D6;&#x65E7;&#x7684;&#x6570;&#x636E;,&#x7136;&#x540E;&#x53D6;&#x65B0;&#x7684;</span>
+
+print(<span class="hljs-string">&apos;-----&gt;&apos;</span>,data1.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+print(<span class="hljs-string">&apos;-----&gt;&apos;</span>,data2.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+
+conn.close()
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket
+BUFSIZE=<span class="hljs-number">1024</span>
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>)
+
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+res=s.connect_ex(ip_port)
+
+
+s.send(<span class="hljs-string">&apos;hello egg&apos;</span>.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+</code></pre>
+<p>&#x603B;&#x7ED3;&#xFF1A;</p>
+<p>&#x9ECF;&#x5305;&#x73B0;&#x8C61;&#x53EA;&#x53D1;&#x751F;&#x5728;tcp&#x534F;&#x8BAE;&#x4E2D;&#xFF1A;</p>
+<p>1.&#x4ECE;&#x8868;&#x9762;&#x4E0A;&#x770B;&#xFF0C;&#x9ECF;&#x5305;&#x95EE;&#x9898;&#x4E3B;&#x8981;&#x662F;&#x56E0;&#x4E3A;&#x53D1;&#x9001;&#x65B9;&#x548C;&#x63A5;&#x6536;&#x65B9;&#x7684;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x3001;tcp&#x534F;&#x8BAE;&#x9762;&#x5411;&#x6D41;&#x901A;&#x4FE1;&#x7684;&#x7279;&#x70B9;&#x3002;</p>
+<p>2.&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;<strong>&#x4E3B;&#x8981;&#x8FD8;&#x662F;&#x56E0;&#x4E3A;&#x63A5;&#x6536;&#x65B9;&#x4E0D;&#x77E5;&#x9053;&#x6D88;&#x606F;&#x4E4B;&#x95F4;&#x7684;&#x754C;&#x9650;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x4E00;&#x6B21;&#x6027;&#x63D0;&#x53D6;&#x591A;&#x5C11;&#x5B57;&#x8282;&#x7684;&#x6570;&#x636E;&#x6240;&#x9020;&#x6210;&#x7684;</strong></p>
+<h4 id="65-&#x9ECF;&#x5305;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;">6.5 &#x9ECF;&#x5305;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h4>
+<h6 id="651-&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E00;">6.5.1 &#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E00;</h6>
+<p>&#x95EE;&#x9898;&#x7684;&#x6839;&#x6E90;&#x5728;&#x4E8E;&#xFF0C;&#x63A5;&#x6536;&#x7AEF;&#x4E0D;&#x77E5;&#x9053;&#x53D1;&#x9001;&#x7AEF;&#x5C06;&#x8981;&#x4F20;&#x9001;&#x7684;&#x5B57;&#x8282;&#x6D41;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;&#x89E3;&#x51B3;&#x7C98;&#x5305;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x56F4;&#x7ED5;&#xFF0C;&#x5982;&#x4F55;&#x8BA9;&#x53D1;&#x9001;&#x7AEF;&#x5728;&#x53D1;&#x9001;&#x6570;&#x636E;&#x524D;&#xFF0C;&#x628A;&#x81EA;&#x5DF1;&#x5C06;&#x8981;&#x53D1;&#x9001;&#x7684;&#x5B57;&#x8282;&#x6D41;&#x603B;&#x5927;&#x5C0F;&#x8BA9;&#x63A5;&#x6536;&#x7AEF;&#x77E5;&#x6653;&#xFF0C;&#x7136;&#x540E;&#x63A5;&#x6536;&#x7AEF;&#x6765;&#x4E00;&#x4E2A;&#x6B7B;&#x5FAA;&#x73AF;&#x63A5;&#x6536;&#x5B8C;&#x6240;&#x6709;&#x6570;&#x636E;</p>
+<p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket,subprocess
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>)
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, <span class="hljs-number">1</span>)
+
+s.bind(ip_port)
+s.listen(<span class="hljs-number">5</span>)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    conn,addr=s.accept()
+    print(<span class="hljs-string">&apos;&#x5BA2;&#x6237;&#x7AEF;&apos;</span>,addr)
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        msg=conn.recv(<span class="hljs-number">1024</span>)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> msg:<span class="hljs-keyword">break</span>
+        res=subprocess.Popen(msg.decode(<span class="hljs-string">&apos;utf-8&apos;</span>),shell=<span class="hljs-keyword">True</span>,\
+                            stdin=subprocess.PIPE,\
+                         stderr=subprocess.PIPE,\
+                         stdout=subprocess.PIPE)
+        err=res.stderr.read()
+        <span class="hljs-keyword">if</span> err:
+            ret=err
+        <span class="hljs-keyword">else</span>:
+            ret=res.stdout.read()
+        data_length=len(ret)
+        conn.send(str(data_length).encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+        data=conn.recv(<span class="hljs-number">1024</span>).decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+        <span class="hljs-keyword">if</span> data == <span class="hljs-string">&apos;recv_ready&apos;</span>:
+            conn.sendall(ret)
+    conn.close()
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket,time
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+res=s.connect_ex((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>))
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    msg=input(<span class="hljs-string">&apos;&gt;&gt;: &apos;</span>).strip()
+    <span class="hljs-keyword">if</span> len(msg) == <span class="hljs-number">0</span>:<span class="hljs-keyword">continue</span>
+    <span class="hljs-keyword">if</span> msg == <span class="hljs-string">&apos;quit&apos;</span>:<span class="hljs-keyword">break</span>
+
+    s.send(msg.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    length=int(s.recv(<span class="hljs-number">1024</span>).decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    s.send(<span class="hljs-string">&apos;recv_ready&apos;</span>.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    send_size=<span class="hljs-number">0</span>
+    recv_size=<span class="hljs-number">0</span>
+    data=<span class="hljs-string">b&apos;&apos;</span>
+    <span class="hljs-keyword">while</span> recv_size &lt; length:
+        data+=s.recv(<span class="hljs-number">1024</span>)
+        recv_size+=len(data)
+
+
+    print(data.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+</code></pre>
+<p>&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;</p>
+<pre><code>&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x901F;&#x5EA6;&#x8FDC;&#x5FEB;&#x4E8E;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x901F;&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x53D1;&#x9001;&#x4E00;&#x6BB5;&#x5B57;&#x8282;&#x524D;&#xFF0C;&#x5148;&#x7528;send&#x53BB;&#x53D1;&#x9001;&#x8BE5;&#x5B57;&#x8282;&#x6D41;&#x957F;&#x5EA6;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F1A;&#x653E;&#x5927;&#x7F51;&#x7EDC;&#x5EF6;&#x8FDF;&#x5E26;&#x6765;&#x7684;&#x6027;&#x80FD;&#x635F;&#x8017;
+</code></pre><h6 id="652-&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E8C;">6.5.2 &#x89E3;&#x51B3;&#x65B9;&#x6848;&#x4E8C;</h6>
+<p>struct&#x6A21;&#x5757; &#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x628A;&#x8981;&#x53D1;&#x9001;&#x7684;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x8F6C;&#x6362;&#x6210;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x8282;&#x3002;&#x8FD9;&#x6837;&#x5BA2;&#x6237;&#x7AEF;&#x6BCF;&#x6B21;&#x63A5;&#x6536;&#x6D88;&#x606F;&#x4E4B;&#x524D;&#x53EA;&#x8981;&#x5148;&#x63A5;&#x53D7;&#x8FD9;&#x4E2A;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x5B57;&#x8282;&#x7684;&#x5185;&#x5BB9;&#x770B;&#x4E00;&#x770B;&#x63A5;&#x4E0B;&#x6765;&#x8981;&#x63A5;&#x6536;&#x7684;&#x4FE1;&#x606F;&#x5927;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x7EC8;&#x63A5;&#x53D7;&#x7684;&#x6570;&#x636E;&#x53EA;&#x8981;&#x8FBE;&#x5230;&#x8FD9;&#x4E2A;&#x503C;&#x5C31;&#x505C;&#x6B62;&#xFF0C;&#x5C31;&#x80FD;&#x521A;&#x597D;&#x4E0D;&#x591A;&#x4E0D;&#x5C11;&#x7684;&#x63A5;&#x6536;&#x5B8C;&#x6574;&#x7684;&#x6570;&#x636E;&#x4E86;&#x3002;</p>
+<p>struct&#x6A21;&#x5757;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> json,struct
+<span class="hljs-comment">#&#x5047;&#x8BBE;&#x901A;&#x8FC7;&#x5BA2;&#x6237;&#x7AEF;&#x4E0A;&#x4F20;1T:1073741824000&#x7684;&#x6587;&#x4EF6;a.txt</span>
+
+<span class="hljs-comment">#&#x4E3A;&#x907F;&#x514D;&#x7C98;&#x5305;,&#x5FC5;&#x987B;&#x81EA;&#x5B9A;&#x5236;&#x62A5;&#x5934;</span>
+header={<span class="hljs-string">&apos;file_size&apos;</span>:<span class="hljs-number">1073741824000</span>,<span class="hljs-string">&apos;file_name&apos;</span>:<span class="hljs-string">&apos;/a/b/c/d/e/a.txt&apos;</span>,<span class="hljs-string">&apos;md5&apos;</span>:<span class="hljs-string">&apos;8f6fbf8347faa4924a76856701edb0f3&apos;</span>} <span class="hljs-comment">#1T&#x6570;&#x636E;,&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x548C;md5&#x503C;</span>
+
+<span class="hljs-comment">#&#x4E3A;&#x4E86;&#x8BE5;&#x62A5;&#x5934;&#x80FD;&#x4F20;&#x9001;,&#x9700;&#x8981;&#x5E8F;&#x5217;&#x5316;&#x5E76;&#x4E14;&#x8F6C;&#x4E3A;bytes</span>
+head_bytes=bytes(json.dumps(header),encoding=<span class="hljs-string">&apos;utf-8&apos;</span>) <span class="hljs-comment">#&#x5E8F;&#x5217;&#x5316;&#x5E76;&#x8F6C;&#x6210;bytes,&#x7528;&#x4E8E;&#x4F20;&#x8F93;</span>
+
+<span class="hljs-comment">#&#x4E3A;&#x4E86;&#x8BA9;&#x5BA2;&#x6237;&#x7AEF;&#x77E5;&#x9053;&#x62A5;&#x5934;&#x7684;&#x957F;&#x5EA6;,&#x7528;struck&#x5C06;&#x62A5;&#x5934;&#x957F;&#x5EA6;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x8F6C;&#x6210;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;:4&#x4E2A;&#x5B57;&#x8282;</span>
+head_len_bytes=struct.pack(<span class="hljs-string">&apos;i&apos;</span>,len(head_bytes)) <span class="hljs-comment">#&#x8FD9;4&#x4E2A;&#x5B57;&#x8282;&#x91CC;&#x53EA;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x5B57;,&#x8BE5;&#x6570;&#x5B57;&#x662F;&#x62A5;&#x5934;&#x7684;&#x957F;&#x5EA6;</span>
+
+<span class="hljs-comment">#&#x5BA2;&#x6237;&#x7AEF;&#x5F00;&#x59CB;&#x53D1;&#x9001;</span>
+conn.send(head_len_bytes) <span class="hljs-comment">#&#x5148;&#x53D1;&#x62A5;&#x5934;&#x7684;&#x957F;&#x5EA6;,4&#x4E2A;bytes</span>
+conn.send(head_bytes) <span class="hljs-comment">#&#x518D;&#x53D1;&#x62A5;&#x5934;&#x7684;&#x5B57;&#x8282;&#x683C;&#x5F0F;</span>
+conn.sendall(&#x6587;&#x4EF6;&#x5185;&#x5BB9;) <span class="hljs-comment">#&#x7136;&#x540E;&#x53D1;&#x771F;&#x5B9E;&#x5185;&#x5BB9;&#x7684;&#x5B57;&#x8282;&#x683C;&#x5F0F;</span>
+
+<span class="hljs-comment">#&#x670D;&#x52A1;&#x7AEF;&#x5F00;&#x59CB;&#x63A5;&#x6536;</span>
+head_len_bytes=s.recv(<span class="hljs-number">4</span>) <span class="hljs-comment">#&#x5148;&#x6536;&#x62A5;&#x5934;4&#x4E2A;bytes,&#x5F97;&#x5230;&#x62A5;&#x5934;&#x957F;&#x5EA6;&#x7684;&#x5B57;&#x8282;&#x683C;&#x5F0F;</span>
+x=struct.unpack(<span class="hljs-string">&apos;i&apos;</span>,head_len_bytes)[<span class="hljs-number">0</span>] <span class="hljs-comment">#&#x63D0;&#x53D6;&#x62A5;&#x5934;&#x7684;&#x957F;&#x5EA6;</span>
+
+head_bytes=s.recv(x) <span class="hljs-comment">#&#x6309;&#x7167;&#x62A5;&#x5934;&#x957F;&#x5EA6;x,&#x6536;&#x53D6;&#x62A5;&#x5934;&#x7684;bytes&#x683C;&#x5F0F;</span>
+header=json.loads(json.dumps(header)) <span class="hljs-comment">#&#x63D0;&#x53D6;&#x62A5;&#x5934;</span>
+
+<span class="hljs-comment">#&#x6700;&#x540E;&#x6839;&#x636E;&#x62A5;&#x5934;&#x7684;&#x5185;&#x5BB9;&#x63D0;&#x53D6;&#x771F;&#x5B9E;&#x7684;&#x6570;&#x636E;,&#x6BD4;&#x5982;</span>
+real_data_len=s.recv(header[<span class="hljs-string">&apos;file_size&apos;</span>])
+s.recv(real_data_len)
+</code></pre>
+<p>struct&#x7684;&#x8BE6;&#x7EC6;&#x7528;&#x6CD5;</p>
+<pre><code>#_*_coding:utf-8_*_
+#http://www.cnblogs.com/coser/archive/2011/12/17/2291160.html
+__author__ = &apos;Linhaifeng&apos;
+import struct
+import binascii
+import ctypes
+
+values1 = (1, &apos;abc&apos;.encode(&apos;utf-8&apos;), 2.7)
+values2 = (&apos;defg&apos;.encode(&apos;utf-8&apos;),101)
+s1 = struct.Struct(&apos;I3sf&apos;)
+s2 = struct.Struct(&apos;4sI&apos;)
+
+print(s1.size,s2.size)
+prebuffer=ctypes.create_string_buffer(s1.size+s2.size)
+print(&apos;Before : &apos;,binascii.hexlify(prebuffer))
+# t=binascii.hexlify(&apos;asdfaf&apos;.encode(&apos;utf-8&apos;))
+# print(t)
+
+
+s1.pack_into(prebuffer,0,*values1)
+s2.pack_into(prebuffer,s1.size,*values2)
+
+print(&apos;After pack&apos;,binascii.hexlify(prebuffer))
+print(s1.unpack_from(prebuffer,0))
+print(s2.unpack_from(prebuffer,s1.size))
+
+s3=struct.Struct(&apos;ii&apos;)
+s3.pack_into(prebuffer,0,123,123)
+print(&apos;After pack&apos;,binascii.hexlify(prebuffer))
+print(s3.unpack_from(prebuffer,0))
+</code></pre><h6 id="653-&#x4F7F;&#x7528;struct&#x89E3;&#x51B3;&#x7C98;&#x5305;&#x95EE;&#x9898;">6.5.3 &#x4F7F;&#x7528;struct&#x89E3;&#x51B3;&#x7C98;&#x5305;&#x95EE;&#x9898;</h6>
+<p>&#x501F;&#x52A9;struct&#x6A21;&#x5757;&#xFF0C;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x957F;&#x5EA6;&#x6570;&#x5B57;&#x53EF;&#x4EE5;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x5927;&#x5C0F;&#x7684;4&#x5B57;&#x8282;&#x6570;&#x5B57;&#x3002;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x8FD9;&#x4E2A;&#x7279;&#x70B9;&#x6765;&#x9884;&#x5148;&#x53D1;&#x9001;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D1;&#x9001;&#x65F6;</th>
+<th>&#x63A5;&#x6536;&#x65F6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5148;&#x53D1;&#x9001;struct&#x8F6C;&#x6362;&#x597D;&#x7684;&#x6570;&#x636E;&#x957F;&#x5EA6;4&#x5B57;&#x8282;</td>
+<td>&#x5148;&#x63A5;&#x53D7;4&#x4E2A;&#x5B57;&#x8282;&#x4F7F;&#x7528;struct&#x8F6C;&#x6362;&#x6210;&#x6570;&#x5B57;&#x6765;&#x83B7;&#x53D6;&#x8981;&#x63A5;&#x6536;&#x7684;&#x6570;&#x636E;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>&#x518D;&#x53D1;&#x9001;&#x6570;&#x636E;</td>
+<td>&#x518D;&#x6309;&#x7167;&#x957F;&#x5EA6;&#x63A5;&#x6536;&#x6570;&#x636E;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket,struct,json
+<span class="hljs-keyword">import</span> subprocess
+phone=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+phone.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,<span class="hljs-number">1</span>) <span class="hljs-comment">#&#x5C31;&#x662F;&#x5B83;&#xFF0C;&#x5728;bind&#x524D;&#x52A0;</span>
+
+phone.bind((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>))
+
+phone.listen(<span class="hljs-number">5</span>)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    conn,addr=phone.accept()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        cmd=conn.recv(<span class="hljs-number">1024</span>)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> cmd:<span class="hljs-keyword">break</span>
+        print(<span class="hljs-string">&apos;cmd: %s&apos;</span> %cmd)
+
+        res=subprocess.Popen(cmd.decode(<span class="hljs-string">&apos;utf-8&apos;</span>),
+                             shell=<span class="hljs-keyword">True</span>,
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.PIPE)
+        err=res.stderr.read()
+        print(err)
+        <span class="hljs-keyword">if</span> err:
+            back_msg=err
+        <span class="hljs-keyword">else</span>:
+            back_msg=res.stdout.read()
+
+
+        conn.send(struct.pack(<span class="hljs-string">&apos;i&apos;</span>,len(back_msg))) <span class="hljs-comment">#&#x5148;&#x53D1;back_msg&#x7684;&#x957F;&#x5EA6;</span>
+        conn.sendall(back_msg) <span class="hljs-comment">#&#x5728;&#x53D1;&#x771F;&#x5B9E;&#x7684;&#x5185;&#x5BB9;</span>
+
+    conn.close()
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+<span class="hljs-keyword">import</span> socket,time,struct
+
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+res=s.connect_ex((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>))
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    msg=input(<span class="hljs-string">&apos;&gt;&gt;: &apos;</span>).strip()
+    <span class="hljs-keyword">if</span> len(msg) == <span class="hljs-number">0</span>:<span class="hljs-keyword">continue</span>
+    <span class="hljs-keyword">if</span> msg == <span class="hljs-string">&apos;quit&apos;</span>:<span class="hljs-keyword">break</span>
+
+    s.send(msg.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+
+
+
+    l=s.recv(<span class="hljs-number">4</span>)
+    x=struct.unpack(<span class="hljs-string">&apos;i&apos;</span>,l)[<span class="hljs-number">0</span>]
+    print(type(x),x)
+    <span class="hljs-comment"># print(struct.unpack(&apos;I&apos;,l))</span>
+    r_s=<span class="hljs-number">0</span>
+    data=<span class="hljs-string">b&apos;&apos;</span>
+    <span class="hljs-keyword">while</span> r_s &lt; x:
+        r_d=s.recv(<span class="hljs-number">1024</span>)
+        data+=r_d
+        r_s+=len(r_d)
+
+    <span class="hljs-comment"># print(data.decode(&apos;utf-8&apos;))</span>
+    print(data.decode(<span class="hljs-string">&apos;gbk&apos;</span>)) <span class="hljs-comment">#windows&#x9ED8;&#x8BA4;gbk&#x7F16;&#x7801;</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x628A;&#x62A5;&#x5934;&#x505A;&#x6210;&#x5B57;&#x5178;&#xFF0C;&#x5B57;&#x5178;&#x91CC;&#x5305;&#x542B;&#x5C06;&#x8981;&#x53D1;&#x9001;&#x7684;&#x771F;&#x5B9E;&#x6570;&#x636E;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x7136;&#x540E;json&#x5E8F;&#x5217;&#x5316;&#xFF0C;&#x7136;&#x540E;&#x7528;struck&#x5C06;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x6570;&#x636E;&#x957F;&#x5EA6;&#x6253;&#x5305;&#x6210;4&#x4E2A;&#x5B57;&#x8282;&#xFF08;4&#x4E2A;&#x81EA;&#x5DF1;&#x8DB3;&#x591F;&#x7528;&#x4E86;&#xFF09;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53D1;&#x9001;&#x65F6;</th>
+<th>&#x63A5;&#x6536;&#x65F6;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5148;&#x53D1;&#x62A5;&#x5934;&#x957F;&#x5EA6;</td>
+<td>&#x5148;&#x6536;&#x62A5;&#x5934;&#x957F;&#x5EA6;&#xFF0C;&#x7528;struct&#x53D6;&#x51FA;&#x6765;</td>
+</tr>
+<tr>
+<td>&#x518D;&#x7F16;&#x7801;&#x62A5;&#x5934;&#x5185;&#x5BB9;&#x7136;&#x540E;&#x53D1;&#x9001;</td>
+<td>&#x6839;&#x636E;&#x53D6;&#x51FA;&#x7684;&#x957F;&#x5EA6;&#x6536;&#x53D6;&#x62A5;&#x5934;&#x5185;&#x5BB9;&#xFF0C;&#x7136;&#x540E;&#x89E3;&#x7801;&#xFF0C;&#x53CD;&#x5E8F;&#x5217;&#x5316;</td>
+</tr>
+<tr>
+<td>&#x6700;&#x540E;&#x53D1;&#x771F;&#x5B9E;&#x5185;&#x5BB9;</td>
+<td>&#x4ECE;&#x53CD;&#x5E8F;&#x5217;&#x5316;&#x7684;&#x7ED3;&#x679C;&#x4E2D;&#x53D6;&#x51FA;&#x5F85;&#x53D6;&#x6570;&#x636E;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x53BB;&#x53D6;&#x771F;&#x5B9E;&#x7684;&#x6570;&#x636E;&#x5185;&#x5BB9;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket,struct,json
+<span class="hljs-keyword">import</span> subprocess
+phone=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+phone.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,<span class="hljs-number">1</span>) <span class="hljs-comment">#&#x5C31;&#x662F;&#x5B83;&#xFF0C;&#x5728;bind&#x524D;&#x52A0;</span>
+
+phone.bind((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>))
+
+phone.listen(<span class="hljs-number">5</span>)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    conn,addr=phone.accept()
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        cmd=conn.recv(<span class="hljs-number">1024</span>)
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> cmd:<span class="hljs-keyword">break</span>
+        print(<span class="hljs-string">&apos;cmd: %s&apos;</span> %cmd)
+
+        res=subprocess.Popen(cmd.decode(<span class="hljs-string">&apos;utf-8&apos;</span>),
+                             shell=<span class="hljs-keyword">True</span>,
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.PIPE)
+        err=res.stderr.read()
+        print(err)
+        <span class="hljs-keyword">if</span> err:
+            back_msg=err
+        <span class="hljs-keyword">else</span>:
+            back_msg=res.stdout.read()
+
+        headers={<span class="hljs-string">&apos;data_size&apos;</span>:len(back_msg)}
+        head_json=json.dumps(headers)
+        head_json_bytes=bytes(head_json,encoding=<span class="hljs-string">&apos;utf-8&apos;</span>)
+
+        conn.send(struct.pack(<span class="hljs-string">&apos;i&apos;</span>,len(head_json_bytes))) <span class="hljs-comment">#&#x5148;&#x53D1;&#x62A5;&#x5934;&#x7684;&#x957F;&#x5EA6;</span>
+        conn.send(head_json_bytes) <span class="hljs-comment">#&#x518D;&#x53D1;&#x62A5;&#x5934;</span>
+        conn.sendall(back_msg) <span class="hljs-comment">#&#x5728;&#x53D1;&#x771F;&#x5B9E;&#x7684;&#x5185;&#x5BB9;</span>
+
+    conn.close()
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> socket <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">import</span> struct,json
+
+ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>)
+client=socket(AF_INET,SOCK_STREAM)
+client.connect(ip_port)
+
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    cmd=input(<span class="hljs-string">&apos;&gt;&gt;: &apos;</span>)
+    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> cmd:<span class="hljs-keyword">continue</span>
+    client.send(bytes(cmd,encoding=<span class="hljs-string">&apos;utf-8&apos;</span>))
+
+    head=client.recv(<span class="hljs-number">4</span>)
+    head_json_len=struct.unpack(<span class="hljs-string">&apos;i&apos;</span>,head)[<span class="hljs-number">0</span>]
+    head_json=json.loads(client.recv(head_json_len).decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    data_len=head_json[<span class="hljs-string">&apos;data_size&apos;</span>]
+
+    recv_size=<span class="hljs-number">0</span>
+    recv_data=<span class="hljs-string">b&apos;&apos;</span>
+    <span class="hljs-keyword">while</span> recv_size &lt; data_len:
+        recv_data+=client.recv(<span class="hljs-number">1024</span>)
+        recv_size+=len(recv_data)
+
+    print(recv_data.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    <span class="hljs-comment">#print(recv_data.decode(&apos;gbk&apos;)) #windows&#x9ED8;&#x8BA4;gbk&#x7F16;&#x7801;</span>
+</code></pre>
+<p>ftp  &#x5B9E;&#x73B0;&#x4E0A;&#x4F20;&#x4E0B;&#x8F7D;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket
+<span class="hljs-keyword">import</span> struct
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> subprocess
+<span class="hljs-keyword">import</span> os
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MYTCPServer</span>:</span>
+    address_family = socket.AF_INET
+
+    socket_type = socket.SOCK_STREAM
+
+    allow_reuse_address = <span class="hljs-keyword">False</span>
+
+    max_packet_size = <span class="hljs-number">8192</span>
+
+    coding=<span class="hljs-string">&apos;utf-8&apos;</span>
+
+    request_queue_size = <span class="hljs-number">5</span>
+
+    server_dir=<span class="hljs-string">&apos;file_upload&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, server_address, bind_and_activate=True)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Constructor.  May be extended, do not override.&quot;&quot;&quot;</span>
+        self.server_address=server_address
+        self.socket = socket.socket(self.address_family,
+                                    self.socket_type)
+        <span class="hljs-keyword">if</span> bind_and_activate:
+            <span class="hljs-keyword">try</span>:
+                self.server_bind()
+                self.server_activate()
+            <span class="hljs-keyword">except</span>:
+                self.server_close()
+                <span class="hljs-keyword">raise</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">server_bind</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Called by constructor to bind the socket.
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">if</span> self.allow_reuse_address:
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, <span class="hljs-number">1</span>)
+        self.socket.bind(self.server_address)
+        self.server_address = self.socket.getsockname()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">server_activate</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Called by constructor to activate the server.
+        &quot;&quot;&quot;</span>
+        self.socket.listen(self.request_queue_size)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">server_close</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Called to clean-up the server.
+        &quot;&quot;&quot;</span>
+        self.socket.close()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_request</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Get the request and client address from the socket.
+        &quot;&quot;&quot;</span>
+        <span class="hljs-keyword">return</span> self.socket.accept()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">close_request</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-string">&quot;&quot;&quot;Called to clean up an individual request.&quot;&quot;&quot;</span>
+        request.close()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+            self.conn,self.client_addr=self.get_request()
+            print(<span class="hljs-string">&apos;from client &apos;</span>,self.client_addr)
+            <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+                <span class="hljs-keyword">try</span>:
+                    head_struct = self.conn.recv(<span class="hljs-number">4</span>)
+                    <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> head_struct:<span class="hljs-keyword">break</span>
+
+                    head_len = struct.unpack(<span class="hljs-string">&apos;i&apos;</span>, head_struct)[<span class="hljs-number">0</span>]
+                    head_json = self.conn.recv(head_len).decode(self.coding)
+                    head_dic = json.loads(head_json)
+
+                    print(head_dic)
+                    <span class="hljs-comment">#head_dic={&apos;cmd&apos;:&apos;put&apos;,&apos;filename&apos;:&apos;a.txt&apos;,&apos;filesize&apos;:123123}</span>
+                    cmd=head_dic[<span class="hljs-string">&apos;cmd&apos;</span>]
+                    <span class="hljs-keyword">if</span> hasattr(self,cmd):
+                        func=getattr(self,cmd)
+                        func(head_dic)
+                <span class="hljs-keyword">except</span> Exception:
+                    <span class="hljs-keyword">break</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">put</span><span class="hljs-params">(self,args)</span>:</span>
+        file_path=os.path.normpath(os.path.join(
+            self.server_dir,
+            args[<span class="hljs-string">&apos;filename&apos;</span>]
+        ))
+
+        filesize=args[<span class="hljs-string">&apos;filesize&apos;</span>]
+        recv_size=<span class="hljs-number">0</span>
+        print(<span class="hljs-string">&apos;-----&gt;&apos;</span>,file_path)
+        <span class="hljs-keyword">with</span> open(file_path,<span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> f:
+            <span class="hljs-keyword">while</span> recv_size &lt; filesize:
+                recv_data=self.conn.recv(self.max_packet_size)
+                f.write(recv_data)
+                recv_size+=len(recv_data)
+                print(<span class="hljs-string">&apos;recvsize:%s filesize:%s&apos;</span> %(recv_size,filesize))
+
+
+tcpserver1=MYTCPServer((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>))
+
+tcpserver1.run()
+
+
+
+
+
+
+<span class="hljs-comment">#&#x4E0B;&#x5217;&#x4EE3;&#x7801;&#x4E0E;&#x672C;&#x9898;&#x65E0;&#x5173;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MYUDPServer</span>:</span>
+
+    <span class="hljs-string">&quot;&quot;&quot;UDP server class.&quot;&quot;&quot;</span>
+    address_family = socket.AF_INET
+
+    socket_type = socket.SOCK_DGRAM
+
+    allow_reuse_address = <span class="hljs-keyword">False</span>
+
+    max_packet_size = <span class="hljs-number">8192</span>
+
+    coding=<span class="hljs-string">&apos;utf-8&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_request</span><span class="hljs-params">(self)</span>:</span>
+        data, client_addr = self.socket.recvfrom(self.max_packet_size)
+        <span class="hljs-keyword">return</span> (data, self.socket), client_addr
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">server_activate</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment"># No need to call listen() for UDP.</span>
+        <span class="hljs-keyword">pass</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">shutdown_request</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-comment"># No need to shutdown anything.</span>
+        self.close_request(request)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">close_request</span><span class="hljs-params">(self, request)</span>:</span>
+        <span class="hljs-comment"># No need to close anything.</span>
+        <span class="hljs-keyword">pass</span>
+</code></pre>
+<p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket
+<span class="hljs-keyword">import</span> struct
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> os
+
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MYTCPClient</span>:</span>
+    address_family = socket.AF_INET
+
+    socket_type = socket.SOCK_STREAM
+
+    allow_reuse_address = <span class="hljs-keyword">False</span>
+
+    max_packet_size = <span class="hljs-number">8192</span>
+
+    coding=<span class="hljs-string">&apos;utf-8&apos;</span>
+
+    request_queue_size = <span class="hljs-number">5</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, server_address, connect=True)</span>:</span>
+        self.server_address=server_address
+        self.socket = socket.socket(self.address_family,
+                                    self.socket_type)
+        <span class="hljs-keyword">if</span> connect:
+            <span class="hljs-keyword">try</span>:
+                self.client_connect()
+            <span class="hljs-keyword">except</span>:
+                self.client_close()
+                <span class="hljs-keyword">raise</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">client_connect</span><span class="hljs-params">(self)</span>:</span>
+        self.socket.connect(self.server_address)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">client_close</span><span class="hljs-params">(self)</span>:</span>
+        self.socket.close()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">run</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+            inp=input(<span class="hljs-string">&quot;&gt;&gt;: &quot;</span>).strip()
+            <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> inp:<span class="hljs-keyword">continue</span>
+            l=inp.split()
+            cmd=l[<span class="hljs-number">0</span>]
+            <span class="hljs-keyword">if</span> hasattr(self,cmd):
+                func=getattr(self,cmd)
+                func(l)
+
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">put</span><span class="hljs-params">(self,args)</span>:</span>
+        cmd=args[<span class="hljs-number">0</span>]
+        filename=args[<span class="hljs-number">1</span>]
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> os.path.isfile(filename):
+            print(<span class="hljs-string">&apos;file:%s is not exists&apos;</span> %filename)
+            <span class="hljs-keyword">return</span>
+        <span class="hljs-keyword">else</span>:
+            filesize=os.path.getsize(filename)
+
+        head_dic={<span class="hljs-string">&apos;cmd&apos;</span>:cmd,<span class="hljs-string">&apos;filename&apos;</span>:os.path.basename(filename),<span class="hljs-string">&apos;filesize&apos;</span>:filesize}
+        print(head_dic)
+        head_json=json.dumps(head_dic)
+        head_json_bytes=bytes(head_json,encoding=self.coding)
+
+        head_struct=struct.pack(<span class="hljs-string">&apos;i&apos;</span>,len(head_json_bytes))
+        self.socket.send(head_struct)
+        self.socket.send(head_json_bytes)
+        send_size=<span class="hljs-number">0</span>
+        <span class="hljs-keyword">with</span> open(filename,<span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> f:
+            <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+                self.socket.send(line)
+                send_size+=len(line)
+                print(send_size)
+            <span class="hljs-keyword">else</span>:
+                print(<span class="hljs-string">&apos;upload successful&apos;</span>)
+
+
+
+
+client=MYTCPClient((<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">8080</span>))
+
+client.run()
+</code></pre>
+<h3 id="&#x4E94;-socket&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;">&#x4E94; socket&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;</h3>
+<pre><code>&#x670D;&#x52A1;&#x7AEF;&#x5957;&#x63A5;&#x5B57;&#x51FD;&#x6570;
+s.bind()    &#x7ED1;&#x5B9A;(&#x4E3B;&#x673A;,&#x7AEF;&#x53E3;&#x53F7;)&#x5230;&#x5957;&#x63A5;&#x5B57;
+s.listen()  &#x5F00;&#x59CB;TCP&#x76D1;&#x542C;
+s.accept()  &#x88AB;&#x52A8;&#x63A5;&#x53D7;TCP&#x5BA2;&#x6237;&#x7684;&#x8FDE;&#x63A5;,(&#x963B;&#x585E;&#x5F0F;)&#x7B49;&#x5F85;&#x8FDE;&#x63A5;&#x7684;&#x5230;&#x6765;
+
+&#x5BA2;&#x6237;&#x7AEF;&#x5957;&#x63A5;&#x5B57;&#x51FD;&#x6570;
+s.connect()     &#x4E3B;&#x52A8;&#x521D;&#x59CB;&#x5316;TCP&#x670D;&#x52A1;&#x5668;&#x8FDE;&#x63A5;
+s.connect_ex()  connect()&#x51FD;&#x6570;&#x7684;&#x6269;&#x5C55;&#x7248;&#x672C;,&#x51FA;&#x9519;&#x65F6;&#x8FD4;&#x56DE;&#x51FA;&#x9519;&#x7801;,&#x800C;&#x4E0D;&#x662F;&#x629B;&#x51FA;&#x5F02;&#x5E38;
+
+&#x516C;&#x5171;&#x7528;&#x9014;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x51FD;&#x6570;
+s.recv()            &#x63A5;&#x6536;TCP&#x6570;&#x636E;
+s.send()            &#x53D1;&#x9001;TCP&#x6570;&#x636E;
+s.sendall()         &#x53D1;&#x9001;TCP&#x6570;&#x636E;
+s.recvfrom()        &#x63A5;&#x6536;UDP&#x6570;&#x636E;
+s.sendto()          &#x53D1;&#x9001;UDP&#x6570;&#x636E;
+s.getpeername()     &#x8FDE;&#x63A5;&#x5230;&#x5F53;&#x524D;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x8FDC;&#x7AEF;&#x7684;&#x5730;&#x5740;
+s.getsockname()     &#x5F53;&#x524D;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x5730;&#x5740;
+s.getsockopt()      &#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x53C2;&#x6570;
+s.setsockopt()      &#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x53C2;&#x6570;
+s.close()           &#x5173;&#x95ED;&#x5957;&#x63A5;&#x5B57;
+
+&#x9762;&#x5411;&#x9501;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x65B9;&#x6CD5;
+s.setblocking()     &#x8BBE;&#x7F6E;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x963B;&#x585E;&#x4E0E;&#x975E;&#x963B;&#x585E;&#x6A21;&#x5F0F;
+s.settimeout()      &#x8BBE;&#x7F6E;&#x963B;&#x585E;&#x5957;&#x63A5;&#x5B57;&#x64CD;&#x4F5C;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;
+s.gettimeout()      &#x5F97;&#x5230;&#x963B;&#x585E;&#x5957;&#x63A5;&#x5B57;&#x64CD;&#x4F5C;&#x7684;&#x8D85;&#x65F6;&#x65F6;&#x95F4;
+
+&#x9762;&#x5411;&#x6587;&#x4EF6;&#x7684;&#x5957;&#x63A5;&#x5B57;&#x7684;&#x51FD;&#x6570;
+s.fileno()          &#x5957;&#x63A5;&#x5B57;&#x7684;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;
+s.makefile()        &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E0E;&#x8BE5;&#x5957;&#x63A5;&#x5B57;&#x76F8;&#x5173;&#x7684;&#x6587;&#x4EF6;
+</code></pre><p>send&#x548C;sendall&#x65B9;&#x6CD5;</p>
+<pre><code>&#x5B98;&#x65B9;&#x6587;&#x6863;&#x5BF9;socket&#x6A21;&#x5757;&#x4E0B;&#x7684;socket.send()&#x548C;socket.sendall()&#x89E3;&#x91CA;&#x5982;&#x4E0B;&#xFF1A;
+
+socket.send(string[, flags])
+Send data to the socket. The socket must be connected to a remote socket. The optional flags argument has the same meaning as for recv() above. Returns the number of bytes sent. Applications are responsible for checking that all data has been sent; if only some of the data was transmitted, the application needs to attempt delivery of the remaining data.
+
+send()&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x53D1;&#x9001;&#x7684;&#x5B57;&#x8282;&#x6570;&#x91CF;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x91CF;&#x503C;&#x53EF;&#x80FD;&#x5C0F;&#x4E8E;&#x8981;&#x53D1;&#x9001;&#x7684;string&#x7684;&#x5B57;&#x8282;&#x6570;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x53EF;&#x80FD;&#x65E0;&#x6CD5;&#x53D1;&#x9001;string&#x4E2D;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x6709;&#x9519;&#x8BEF;&#x5219;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;
+
+&#x2013;
+
+socket.sendall(string[, flags])
+Send data to the socket. The socket must be connected to a remote socket. The optional flags argument has the same meaning as for recv() above. Unlike send(), this method continues to send data from string until either all data has been sent or an error occurs. None is returned on success. On error, an exception is raised, and there is no way to determine how much data, if any, was successfully sent.
+
+&#x5C1D;&#x8BD5;&#x53D1;&#x9001;string&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x6210;&#x529F;&#x5219;&#x8FD4;&#x56DE;None&#xFF0C;&#x5931;&#x8D25;&#x5219;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;
+
+&#x6545;&#xFF0C;&#x4E0B;&#x9762;&#x4E24;&#x6BB5;&#x4EE3;&#x7801;&#x662F;&#x7B49;&#x4EF7;&#x7684;&#xFF1A;
+
+#sock.sendall(&apos;Hello world\n&apos;)
+
+#buffer = &apos;Hello world\n&apos;
+#while buffer:
+#    bytes = sock.send(buffer)
+#    buffer = buffer[bytes:]
+</code></pre><h3 id="&#x516D;-&#x9A8C;&#x8BC1;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x94FE;&#x63A5;&#x5408;&#x6CD5;&#x6027;">&#x516D; &#x9A8C;&#x8BC1;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x94FE;&#x63A5;&#x5408;&#x6CD5;&#x6027;</h3>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#x4E2D;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x94FE;&#x63A5;&#x8BA4;&#x8BC1;&#x529F;&#x80FD;&#xFF0C;&#x53C8;&#x4E0D;&#x50CF;SSL&#x90A3;&#x4E48;&#x590D;&#x6742;&#xFF0C;&#x90A3;&#x4E48;&#x5229;&#x7528;hmac+&#x52A0;&#x76D0;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;</p>
+<p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code>#_*_coding:utf-8_*_
+from socket import *
+import hmac,os
+
+secret_key=b&apos;linhaifeng bang bang bang&apos;
+def conn_auth(conn):
+    &apos;&apos;&apos;
+    &#x8BA4;&#x8BC1;&#x5BA2;&#x6237;&#x7AEF;&#x94FE;&#x63A5;
+    :param conn:
+    :return:
+    &apos;&apos;&apos;
+    print(&apos;&#x5F00;&#x59CB;&#x9A8C;&#x8BC1;&#x65B0;&#x94FE;&#x63A5;&#x7684;&#x5408;&#x6CD5;&#x6027;&apos;)
+    msg=os.urandom(32)
+    conn.sendall(msg)
+    h=hmac.new(secret_key,msg)
+    digest=h.digest()
+    respone=conn.recv(len(digest))
+    return hmac.compare_digest(respone,digest)
+
+def data_handler(conn,bufsize=1024):
+    if not conn_auth(conn):
+        print(&apos;&#x8BE5;&#x94FE;&#x63A5;&#x4E0D;&#x5408;&#x6CD5;,&#x5173;&#x95ED;&apos;)
+        conn.close()
+        return
+    print(&apos;&#x94FE;&#x63A5;&#x5408;&#x6CD5;,&#x5F00;&#x59CB;&#x901A;&#x4FE1;&apos;)
+    while True:
+        data=conn.recv(bufsize)
+        if not data:break
+        conn.sendall(data.upper())
+
+def server_handler(ip_port,bufsize,backlog=5):
+    &apos;&apos;&apos;
+    &#x53EA;&#x5904;&#x7406;&#x94FE;&#x63A5;
+    :param ip_port:
+    :return:
+    &apos;&apos;&apos;
+    tcp_socket_server=socket(AF_INET,SOCK_STREAM)
+    tcp_socket_server.bind(ip_port)
+    tcp_socket_server.listen(backlog)
+    while True:
+        conn,addr=tcp_socket_server.accept()
+        print(&apos;&#x65B0;&#x8FDE;&#x63A5;[%s:%s]&apos; %(addr[0],addr[1]))
+        data_handler(conn,bufsize)
+
+if __name__ == &apos;__main__&apos;:
+    ip_port=(&apos;127.0.0.1&apos;,9999)
+    bufsize=1024
+    server_handler(ip_port,bufsize)
+</code></pre><p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-comment">#_*_coding:utf-8_*_</span>
+__author__ = <span class="hljs-string">&apos;Linhaifeng&apos;</span>
+<span class="hljs-keyword">from</span> socket <span class="hljs-keyword">import</span> *
+<span class="hljs-keyword">import</span> hmac,os
+
+secret_key=<span class="hljs-string">b&apos;linhaifeng bang bang bang&apos;</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">conn_auth</span><span class="hljs-params">(conn)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;
+    &#x9A8C;&#x8BC1;&#x5BA2;&#x6237;&#x7AEF;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x94FE;&#x63A5;
+    :param conn:
+    :return:
+    &apos;&apos;&apos;</span>
+    msg=conn.recv(<span class="hljs-number">32</span>)
+    h=hmac.new(secret_key,msg)
+    digest=h.digest()
+    conn.sendall(digest)
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">client_handler</span><span class="hljs-params">(ip_port,bufsize=<span class="hljs-number">1024</span>)</span>:</span>
+    tcp_socket_client=socket(AF_INET,SOCK_STREAM)
+    tcp_socket_client.connect(ip_port)
+
+    conn_auth(tcp_socket_client)
+
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        data=input(<span class="hljs-string">&apos;&gt;&gt;: &apos;</span>).strip()
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> data:<span class="hljs-keyword">continue</span>
+        <span class="hljs-keyword">if</span> data == <span class="hljs-string">&apos;quit&apos;</span>:<span class="hljs-keyword">break</span>
+
+        tcp_socket_client.sendall(data.encode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+        respone=tcp_socket_client.recv(bufsize)
+        print(respone.decode(<span class="hljs-string">&apos;utf-8&apos;</span>))
+    tcp_socket_client.close()
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    ip_port=(<span class="hljs-string">&apos;127.0.0.1&apos;</span>,<span class="hljs-number">9999</span>)
+    bufsize=<span class="hljs-number">1024</span>
+    client_handler(ip_port,bufsize)
+</code></pre>
+<h3 id="&#x4E03;-socketserver">&#x4E03; socketserver</h3>
+<p>&#x670D;&#x52A1;&#x7AEF;</p>
+<pre><code>import socketserver
+class Myserver(socketserver.BaseRequestHandler):
+    def handle(self):
+        self.data = self.request.recv(1024).strip()
+        print(&quot;{} wrote:&quot;.format(self.client_address[0]))
+        print(self.data)
+        self.request.sendall(self.data.upper())
+
+if __name__ == &quot;__main__&quot;:
+    HOST, PORT = &quot;127.0.0.1&quot;, 9999
+
+    # &#x8BBE;&#x7F6E;allow_reuse_address&#x5141;&#x8BB8;&#x670D;&#x52A1;&#x5668;&#x91CD;&#x7528;&#x5730;&#x5740;
+    socketserver.TCPServer.allow_reuse_address = True
+    # &#x521B;&#x5EFA;&#x4E00;&#x4E2A;server, &#x5C06;&#x670D;&#x52A1;&#x5730;&#x5740;&#x7ED1;&#x5B9A;&#x5230;127.0.0.1:9999
+    server = socketserver.TCPServer((HOST, PORT),Myserver)
+    # &#x8BA9;server&#x6C38;&#x8FDC;&#x8FD0;&#x884C;&#x4E0B;&#x53BB;&#xFF0C;&#x9664;&#x975E;&#x5F3A;&#x5236;&#x505C;&#x6B62;&#x7A0B;&#x5E8F;
+    server.serve_forever()
+</code></pre><p>&#x5BA2;&#x6237;&#x7AEF;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> socket
+
+HOST, PORT = <span class="hljs-string">&quot;127.0.0.1&quot;</span>, <span class="hljs-number">9999</span>
+data = <span class="hljs-string">&quot;hello&quot;</span>
+
+<span class="hljs-comment"># &#x521B;&#x5EFA;&#x4E00;&#x4E2A;socket&#x94FE;&#x63A5;&#xFF0C;SOCK_STREAM&#x4EE3;&#x8868;&#x4F7F;&#x7528;TCP&#x534F;&#x8BAE;</span>
+<span class="hljs-keyword">with</span> socket.socket(socket.AF_INET, socket.SOCK_STREAM) <span class="hljs-keyword">as</span> sock:
+    sock.connect((HOST, PORT))          <span class="hljs-comment"># &#x94FE;&#x63A5;&#x5230;&#x5BA2;&#x6237;&#x7AEF;</span>
+    sock.sendall(bytes(data + <span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-string">&quot;utf-8&quot;</span>)) <span class="hljs-comment"># &#x5411;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x6570;&#x636E;</span>
+    received = str(sock.recv(<span class="hljs-number">1024</span>), <span class="hljs-string">&quot;utf-8&quot;</span>)<span class="hljs-comment"># &#x4ECE;&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x6536;&#x6570;&#x636E;</span>
+
+print(<span class="hljs-string">&quot;Sent:     {}&quot;</span>.format(data))
+print(<span class="hljs-string">&quot;Received: {}&quot;</span>.format(received))
+</code></pre>
 
                                 
                                 </section>
@@ -262,7 +1271,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"python网络编程","level":"1.2.3","depth":2,"next":{"title":"Chapter2","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[]},"previous":{"title":"python面向对象","level":"1.2.2","depth":2,"path":"python/python面向对象.md","ref":"python/python面向对象.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/python网络编程.md","mtime":"2019-10-01T17:16:40.520Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-01T17:17:35.463Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"python网络编程","level":"1.2.3","depth":2,"next":{"title":"Chapter2","level":"1.3","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[]},"previous":{"title":"python面向对象","level":"1.2.2","depth":2,"path":"python/python面向对象.md","ref":"python/python面向对象.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python/python网络编程.md","mtime":"2019-08-30T03:32:51.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-01T17:43:52.375Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -270,6 +1279,10 @@
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
